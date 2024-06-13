@@ -1,6 +1,6 @@
-import PersonalDetails from "./Hero Section/PersonalDetails";
-import ProfilePic from "./Hero Section/ProfilePic";
-import TechStack from "./Hero Section/TechStack";
+import PersonalDetails from "./PersonalDetails";
+import ProfilePic from "./ProfilePic";
+import TechStack from "./TechStack";
 
 const HeroSection = () => {
   const iconVariants = {
