@@ -1,12 +1,97 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
+  const headingVariant = {
+    initial: { y: -50, opacity: 0 },
+    whileInView: { y: 0, opacity: 1 },
+  };
+  const springTransition = {
+    type: "spring",
+    stiffness: 80,
+    damping: 4,
+    delay: 0.3,
+  };
+  const ImgBoxVariant = {
+    initial: { x: -100, opacity: 0 },
+    whileInView: { x: 0, opacity: 1 },
+  };
+  const TextBoxVariant = {
+    initial: { x: +50, opacity: 0 },
+    whileInView: { x: 0, opacity: 1 },
+  };
+  //   viewport={{ once: true, amount: 0.8 }}
+
   return (
-    <div className=" container bg-black flex ">
-      <div className="imgBox">
-        <img src="src\assets\coding-animated.jpg" alt="" />
+    <div className="flex flex-col p-10 bg-black">
+      <motion.h1
+        variants={headingVariant}
+        initial="initial"
+        whileInView="whileInView"
+        transition={springTransition}
+        viewport={{ once: true, amount: 0.8 }}
+        className="text-white font-bold text-[2.5rem] font-Poppins text-center mb-10"
+      >
+        About Me
+      </motion.h1>
+      <div className="container flex flex-col gap-4 lg:gap-0 lg:flex-row justify-around ">
+        <motion.div
+          variants={ImgBoxVariant}
+          initial="initial"
+          whileInView="whileInView"
+          transition={springTransition}
+          viewport={{ once: true, amount: 0.8 }}
+          className="imgBox w-fit "
+        >
+          <img
+            src="src\assets\coding-animated.jpg"
+            alt=""
+            className="rounded-xl"
+          />
+        </motion.div>
+        <motion.div
+          variants={TextBoxVariant}
+          initial="initial"
+          whileInView="whileInView"
+          transition={springTransition}
+          viewport={{ once: true, amount: 0.8 }}
+          className="myDetails w-full lg:w-1/2 text-center flex flex-col justify-around font-Poppins lg:text-lg text-neutral-200 "
+        >
+          <span>
+            Hii👋, I am Apurva Gaurav, a dedicated{" "}
+            <span className="font-semibold text-sky-500">
+              Frontend Developer
+            </span>{" "}
+            with a passion for creating beautiful and responsive web
+            applications.{" "}
+          </span>
+          <span>
+            I am well-versed in{" "}
+            <span className="text-sky-500 font-semibold">
+              HTML, CSS and JavaScript
+            </span>{" "}
+            , and I also excel in using{" "}
+            <span className="text-sky-500 font-semibold">React.js</span> to
+            build interactive user interfaces.
+          </span>
+          <span>
+            My strong skills in managing app data with
+            <span className="text-sky-500 font-semibold"> Redux</span>, along
+            with my experience in styling websites using{" "}
+            <span className="text-sky-500 font-semibold">
+              Tailwind CSS and Bootstrap
+            </span>{" "}
+            , ensure that my websites look great on all devices.
+          </span>
+          <span>
+            I stay up-to-date with the latest web development trends and tools,
+            which helps me consistently deliver high quality products. My
+            Portfolio showcase my ability to solve problems creatively and
+            develop impressive projects, making me a valuable addition to any
+            team
+          </span>
+        </motion.div>
       </div>
-      <div className="myDetails"></div>
     </div>
   );
 };

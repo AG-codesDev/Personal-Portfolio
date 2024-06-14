@@ -32,7 +32,7 @@ const PersonalDetails = ({ divVariant, divSpringTransition, iconVariants }) => {
             whileHover="hover"
             whileTap="tap"
             transition={{ type: "spring", stiffness: 300 }}
-            href="https://github.com/ApurvaGaurav"
+            href="https://github.com/AG-codesDev"
             target="_blank"
           >
             <FaGithub className="text-white text-3xl hover:text-sky-500 transition-all cursor-pointer" />
