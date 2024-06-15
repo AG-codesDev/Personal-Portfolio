@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ProilePic from "../../assets/Images/profile-pic.png";
 
 const ProfilePic = ({ divVariant, divSpringTransition }) => {
   return (
@@ -10,7 +11,7 @@ const ProfilePic = ({ divVariant, divSpringTransition }) => {
       className="imgBox order-1 lg:order-2"
     >
       <img
-        src="src\assets\profile-pic.png"
+        src={ProilePic}
         alt="profile-pic"
         className="h-44 w-44 lg:h-72 lg:w-72"
       />

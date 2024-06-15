@@ -1,55 +1,62 @@
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import VideoZenImage from "../../assets/Images/VideoZen.png";
+import TastyVoyageImage from "../../assets/Images/Tasty Voyage.png";
+import MusicPlayerImage from "../../assets/Images/Music Player.png";
+import WeatherAppImage from "../../assets/Images/Weather App.png";
+import PassWordGeneratorImage from "../../assets/Images/Password Generator.png";
+import MicrosoftLandingPageImage from "../../assets/Images/Microsoft Landing Page.png";
+import TodoAppImage from "../../assets/Images/Todo App.png";
 
 const MyProjects = () => {
   const projects = [
     {
       name: "Video Zen",
       tech: "React.js, Redux, Tailwind CSS, YouTube API",
-      imgSrc: "src/assets/VideoZen.png",
+      imgSrc: VideoZenImage,
       liveLink: "https://videozen1.netlify.app/",
       githubLink: "https://github.com/AG-codesDev/VideoZen",
     },
     {
       name: "Tasty Voyage",
       tech: "React.js, Tailwind CSS, Redux, Swiggy API",
-      imgSrc: "src/assets/Tasty Voyage.png",
+      imgSrc: TastyVoyageImage,
       liveLink: "https://tasty-voyage.netlify.app/",
       githubLink: "https://github.com/AG-codesDev/Tasty-Voyage",
     },
     {
       name: "Music Player",
       tech: "HTML, Tailwind CSS, JavaScript",
-      imgSrc: "src/assets/Music Player.png",
+      imgSrc: MusicPlayerImage,
       liveLink: "https://github.com/AG-codesDev/Music-Player",
       githubLink: "https://github.com/AG-codesDev/Music-Player",
     },
     {
       name: "Weather App",
       tech: "Rapid API, JavaScript, HTML, CSS",
-      imgSrc: "src/assets/Weather App.png",
+      imgSrc: WeatherAppImage,
       liveLink: "https://weatherdetails01.netlify.app/",
       githubLink: "https://github.com/AG-codesDev/Weather-app",
     },
     {
       name: "Password Generator",
       tech: "HTML, CSS, JavaScript",
-      imgSrc: "src/assets/Password Generator.png",
+      imgSrc: PassWordGeneratorImage,
       liveLink: "https://random-password-generator001.netlify.app/",
       githubLink: "https://github.com/AG-codesDev/Password-Generator",
     },
     {
       name: "Microsoft Landing Page",
       tech: "HTML, TailWind CSS",
-      imgSrc: "src/assets/Microsoft Landing Page.png",
+      imgSrc: MicrosoftLandingPageImage,
       liveLink: "https://msthomepage.netlify.app/",
       githubLink: "https://github.com/AG-codesDev/Microsoft-Landing-Page",
     },
     {
       name: "TODO App",
       tech: "HTML, Bootstrap, JavaScript",
-      imgSrc: "src/assets/Todo App.png",
+      imgSrc: TodoAppImage,
       liveLink: "https://todo-app002.netlify.app/",
       githubLink: "https://github.com/AG-codesDev/TODO-APP",
     },
@@ -77,7 +84,7 @@ const MyProjects = () => {
 
   return (
     <div
-      className="container lg:p-20 p-2 flex flex-col bg-[#111111] text-white"
+      className="container lg:p-20 pt-24 flex flex-col bg-[#111111] text-white"
       id="ProjectSection"
     >
       <div className="flex flex-col gap-8">
@@ -87,7 +94,7 @@ const MyProjects = () => {
           whileInView="whileInView"
           transition={springTransition}
           viewport={{ once: true, amount: 0.8 }}
-          className="heading flex flex-col gap-4 lg:ml-20 mb-4"
+          className="heading flex flex-col gap-4 lg:ml-20 ml-4 mb-4"
         >
           <h1 className="lg:text-4xl text-3xl font-bold text-sky-600 font-Poppins">
             MY PROJECTS

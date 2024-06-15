@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import codingAnimated from "../../assets/Images/coding-animated.jpg";
 
 const AboutMe = () => {
   const headingVariant = {
@@ -42,11 +43,7 @@ const AboutMe = () => {
           viewport={{ once: true, amount: 0.5 }}
           className="imgBox w-fit "
         >
-          <img
-            src="src\assets\coding-animated.jpg"
-            alt=""
-            className="rounded-xl"
-          />
+          <img src={codingAnimated} alt="" className="rounded-xl" />
         </motion.div>
         <motion.div
           variants={TextBoxVariant}
