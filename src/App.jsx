@@ -1,10 +1,13 @@
 import AboutMe from "./Components/About Me/AboutMe";
+import Form from "./Components/Contact Form/Form";
+import Footer from "./Components/Footer/Footer";
 import HeroSection from "./Components/Hero Section/HeroSection";
 import NavBar from "./Components/NavBar/NavBar";
+import MyProjects from "./Components/Project Section/MyProjects";
 
 function App() {
   return (
-    <div className=" h-full">
+    <div className=" h-full scroll-smooth">
       <NavBar />
       <div className="bg-[#111111] h-screen">
         <div className="w-full lg:w-[65%] mt- px-5 mx-auto">
@@ -12,6 +15,9 @@ function App() {
         </div>
       </div>
       <AboutMe />
+      <MyProjects />
+      <Form />
+      <Footer />
     </div>
   );
 }

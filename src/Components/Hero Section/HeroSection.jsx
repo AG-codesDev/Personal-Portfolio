@@ -21,7 +21,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="py-24 lg:py-28">
+    <div className="py-24 lg:py-28" id="HeroSection">
       <div className="details&Img flex items-center flex-col lg:flex-row gap-2 justify-between">
         <PersonalDetails
           divVariant={divVariant}

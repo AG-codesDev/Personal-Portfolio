@@ -20,10 +20,9 @@ const AboutMe = () => {
     initial: { x: +50, opacity: 0 },
     whileInView: { x: 0, opacity: 1 },
   };
-  //   viewport={{ once: true, amount: 0.8 }}
 
   return (
-    <div className="flex flex-col p-10 bg-black">
+    <div className="flex flex-col px-10 lg:py-32 py-20 bg-black" id="AboutMe">
       <motion.h1
         variants={headingVariant}
         initial="initial"
@@ -40,7 +39,7 @@ const AboutMe = () => {
           initial="initial"
           whileInView="whileInView"
           transition={springTransition}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
           className="imgBox w-fit "
         >
           <img
