@@ -53,7 +53,8 @@ const AboutMe = () => {
           className="myDetails w-full lg:w-1/2 text-center flex flex-col justify-around font-Poppins lg:text-lg text-neutral-200 "
         >
           <span>
-            Hii👋, I am Apurva Gaurav, a dedicated{" "}
+            Hii👋, I am <span className="font-bold text-xl">Apurva Gaurav</span>{" "}
+            , a dedicated{" "}
             <span className="font-semibold text-sky-500">
               Frontend Developer
             </span>{" "}
@@ -61,22 +62,24 @@ const AboutMe = () => {
             applications.{" "}
           </span>
           <span>
-            I am well-versed in{" "}
-            <span className="text-sky-500 font-semibold">
-              HTML, CSS and JavaScript
-            </span>{" "}
-            , and I also excel in using{" "}
-            <span className="text-sky-500 font-semibold">React.js</span> to
-            build interactive user interfaces.
+            I specialize in{" "}
+            <span className="text-sky-500 font-semibold">React.js</span> for
+            developing dynamic user interfaces, complemented by a strong
+            proficiency in{" "}
+            <span className="text-sky-500 font-semibold">JavaScript</span>{" "}
+            alongside <span className="text-sky-500 font-semibold">HTML</span>{" "}
+            and <span className="text-sky-500 font-semibold">CSS</span>.
           </span>
           <span>
             My strong skills in managing app data with
             <span className="text-sky-500 font-semibold"> Redux</span>, along
             with my experience in styling websites using{" "}
-            <span className="text-sky-500 font-semibold">
-              Tailwind CSS and Bootstrap
-            </span>{" "}
-            , ensure that my websites look great on all devices.
+            <span className="text-sky-500 font-semibold">Tailwind CSS </span> ,{" "}
+            <span className="text-sky-500 font-semibold">Bootstrap </span>
+            and{" "}
+            <span className="text-sky-500 font-semibold">Framer motion</span> to
+            add interactive UI animations ensure that my websites look great on
+            all devices.
           </span>
           <span>
             I stay up-to-date with the latest web development trends and tools,

@@ -53,13 +53,6 @@ const MyProjects = () => {
       liveLink: "https://msthomepage.netlify.app/",
       githubLink: "https://github.com/AG-codesDev/Microsoft-Landing-Page",
     },
-    {
-      name: "TODO App",
-      tech: "HTML, Bootstrap, JavaScript",
-      imgSrc: TodoAppImage,
-      liveLink: "https://todo-app002.netlify.app/",
-      githubLink: "https://github.com/AG-codesDev/TODO-APP",
-    },
   ];
   const iconVariants = {
     hover: { scale: 1.2, color: "#1da1f2" },
@@ -84,7 +77,7 @@ const MyProjects = () => {
 
   return (
     <div
-      className="container lg:p-20 pt-24 flex flex-col bg-[#111111] text-white"
+      className="container lg:p-20 py-24 flex flex-col bg-[#111111] text-white"
       id="ProjectSection"
     >
       <div className="flex flex-col gap-8">
@@ -96,11 +89,11 @@ const MyProjects = () => {
           viewport={{ once: true, amount: 0.8 }}
           className="heading flex flex-col gap-4 lg:ml-20 ml-4 mb-4"
         >
-          <h1 className="lg:text-4xl text-3xl font-bold text-sky-600 font-Poppins">
+          <h1 className="lg:text-4xl text-3xl font-bold text-sky-600 text-center font-Poppins">
             MY PROJECTS
           </h1>
-          <h2 className="lg:text-xl font-Poppins font-medium text-white">
-            Projects that I have built to master Frontend Development
+          <h2 className="lg:text-xl font-Poppins font-medium text-center text-white">
+            Projects I've developed to hone my skills in Frontend Development
           </h2>
         </motion.div>
         <div className="projectsContainer">
@@ -113,13 +106,13 @@ const MyProjects = () => {
                 transition={springTransition}
                 viewport={{ once: true, amount: 0.5 }}
                 key={index}
-                className="project p-5 cursor-pointer flex flex-col gap-2 lg:w-[43%] relative overflow-hidden rounded-2xl"
+                className="project lg:p-5 px-10 py-5 cursor-pointer flex flex-col gap-2 lg:w-[43%] relative overflow-hidden rounded-2xl"
                 whileHover={{ scale: 1.05 }}
               >
                 <img
                   src={project.imgSrc}
                   alt={project.name}
-                  className="rounded-2xl h-80"
+                  className="rounded-2xl h-60 lg:h-80"
                 />
                 <div className="projectDetails flex flex-col gap-2">
                   <h2 className="font-bold font-Poppins text-2xl text-neutral-300">
@@ -160,6 +153,14 @@ const MyProjects = () => {
             ))}
           </div>
         </div>
+        <button className="bg-transparent border-[0.5px] border-sky-500 hover:bg-sky-500 hover:text-black transition-all p-4 text-xl hover w-fit mx-auto rounded-full font-Poppins">
+          <a
+            href="https://github.com/AG-codesDev?tab=repositories"
+            target="_blank"
+          >
+            More Projects
+          </a>
+        </button>
       </div>
     </div>
   );

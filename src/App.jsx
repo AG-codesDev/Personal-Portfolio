@@ -7,7 +7,7 @@ import MyProjects from "./Components/Project Section/MyProjects";
 
 function App() {
   return (
-    <div className=" h-full scroll-smooth">
+    <div className=" h-full bg-[#111111] scroll-smooth">
       <NavBar />
       <div className="bg-[#111111] h-screen">
         <div className="w-full lg:w-[65%] mt- px-5 mx-auto">

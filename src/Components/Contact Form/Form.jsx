@@ -63,7 +63,7 @@ const Form = () => {
           CONTACT ME
         </h1>
         <h2 className="text-xl font-medium text-neutral-300 font-Poppins">
-          SEND ME ANY MESSAGE IF YOU HAVE 👇
+          Feel free to contact me 👇
         </h2>
       </motion.div>
       <motion.div
