@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import codingAnimated from "../../assets/Images/coding-animated.jpg";
 
