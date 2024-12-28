@@ -60,7 +60,7 @@ const PersonalDetails = ({ divVariant, divSpringTransition, iconVariants }) => {
         </div>
         <div className="resumeBtn mt-5">
           <a
-            href="https://drive.google.com/file/d/1hFVO3ZFxuYGMRaq9khCbPolRiNkfFDbp/view?usp=sharing"
+            href="https://drive.google.com/file/d/1gkqhK7_w6EiWdkuvsnJpcbpF_pRUmXRy/view?usp=sharing"
             target="_blank"
           >
             <motion.button

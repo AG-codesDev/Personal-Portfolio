@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ProilePic from "../../assets/Images/profile-pic.png";
+import ProilePic from "../../assets/Images/newprofilepic.jpg";
 
 const ProfilePic = ({ divVariant, divSpringTransition }) => {
   return (
